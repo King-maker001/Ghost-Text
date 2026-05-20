@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Ghost Text Management</h2>
+    
+    <div class="form-group">
+      <input type="text" id="shortcut" placeholder="Keyword (e.g. ;sysout)">
+      <textarea id="expansion" placeholder="Code Snippet or text expansion..." rows="3"></textarea>
+      <button id="save-btn">Add Snippet</button>
+    </div>
+
+    <hr>
+
+    <h3>Active Shortcuts</h3>
+    <div id="snippet-list"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
