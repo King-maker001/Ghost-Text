@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "ghost text",
+  "version": "1.0.0",
+  "description": "Securely expands code snippets and text across web IDEs and editors using shortcuts.",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png"
+  }
+}
